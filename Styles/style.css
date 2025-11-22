@@ -106,7 +106,7 @@ body {
     flex-direction: column;
     height: 250px;
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     background: #dce7f8;
     margin: 0px;
     padding: 10px 15px 25px;
@@ -126,7 +126,7 @@ body {
 .handle-bar {
     width: 50px;
     height: 5px;
-    background: #ccc;
+    background: #aaaaaa;
     border-radius: 3px;
     margin: 0 auto;
     margin-bottom: 10px;
