@@ -155,7 +155,7 @@ form {
 }
 
 .bio-banner {
-  background-image: url("/Images/onetcoverpage.jpg");
+  background-image: url("Images/onetcoverpage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -337,7 +337,7 @@ form {
   border: 1px solid rgb(0, 255, 157);
   border-top: none;
   border-radius: 0px 0px 10px 10px;
-  max-height: 350px;
+  max-height: 380px;
   overflow-y: auto;
 }
 
