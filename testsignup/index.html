@@ -14,21 +14,23 @@
           <div class="form-box">
             <img src="Images/profilepix.png" alt="" />
             <div class="wrapper">
-              <label for="userame">Enter your UserName:</label>
-              <input class="input" type="text" />
+              <label for="username">Enter your Username:</label>
+              <input id="username" class="input-field" type="text" />
             </div>
             <div class="wrapper">
               <label for="email">Enter your Email:</label>
-              <input class="input" type="email" />
+              <input id="email" class="input-field" type="email" />
             </div>
             <div class="wrapper">
               <label for="password">Enter your Password:</label>
               <div class="password-box">
-                <input id="passrord" class="input" type="password" />
+                <input id="password" class="input-field" type="password" />
                 <input id="checked" class="checked" type="checkbox" />
               </div>
             </div>
-            <input id="submit-btn" type="submit" class="submit-btn" />
+            <button id="submit-btn" type="submit" class="submit-btn">
+              Submit
+            </button>
             <div id="bg-drop" class="bg-drop">
               <div class="profile-box">
                 <div class="bio-banner">
@@ -37,6 +39,12 @@
                   </div>
                 </div>
                 <div class="bio-details">
+                  <div class="cta-box">
+                    <button id="signin-button" class="cta-button">
+                      SignIn
+                    </button>
+                    <button id="menu-button" class="cta-button">Menu</button>
+                  </div>
                   Welcome to ONET, the Open Network Technology. An ecosystem for
                   Wweb3 solutions, decendivalised finances (DeFi), blockchain
                   technologies, to empower humanity, support skill learning,
