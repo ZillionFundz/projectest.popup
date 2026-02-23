@@ -1,27 +1,30 @@
 const checkBox = document.getElementById("checked");
-const passrord = document.getElementById("passrord");
+const password = document.getElementById("password");
 const bgDrop = document.getElementById("bg-drop");
 const submitBtn = document.getElementById("submit-btn");
 const signinButton = document.getElementById("signin-button");
+const detailBox = document.getElementById("detail-box");
 
 checkBox.addEventListener("change", () => {
   if (checkBox.checked) {
-    passrord.type = "text";
-    return;
+    password.type = "text";
+    // return;
   } else {
-    passrord.type = "password";
+    password.type = "password";
     return;
   }
 });
 
-submitBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-});
 signinButton.addEventListener("click", (e) => {
   e.preventDefault();
   bgDrop.style.transform = "translateY(-150%)";
-
+  // bgDrop.classList.add = "hidden";
   setTimeout(() => {
     bgDrop.style.display = "none";
   }, 600); // match CSS transition time
+});
+
+submitBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  detailBox.style.visibility = "visible";
 });
