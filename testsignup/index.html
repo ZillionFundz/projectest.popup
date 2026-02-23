@@ -10,6 +10,7 @@
   <body>
     <div class="container">
       <form action="">
+        <h3 id="sign-title" class="sign-title">SignUp</h3>
         <div class="group-box">
           <div class="form-box">
             <img src="Images/profilepix.png" alt="" />
@@ -32,9 +33,17 @@
                 <input id="checked" class="checked" type="checkbox" />
               </div>
             </div>
-            <button id="submit-btn" type="submit" class="submit-btn">
-              Submit
-            </button>
+            <div class="preview-submit">
+              <button id="preview-btn" type="submit" class="action-btn">
+                Preview
+              </button>
+              <button id="submit-btn" type="submit" class="action-btn">
+                Submit
+              </button>
+            </div>
+            <span class="already-have-account"
+              >Already have an account?..... <a href="http://">SignIn</a></span
+            >
             <div id="bg-drop" class="bg-drop">
               <div class="profile-box">
                 <div class="bio-banner">
@@ -45,12 +54,12 @@
                 <div class="bio-details">
                   <div class="cta-box">
                     <button id="signin-button" class="cta-button">
-                      SignIn
+                      SignUp
                     </button>
                     <button id="menu-button" class="cta-button">Menu</button>
                   </div>
-                  Welcome to ONET, the Open Network Technology. An ecosystem for
-                  Wweb3 solutions, decendivalised finances (DeFi), blockchain
+                  Welcome to ONET. The Open Network Technology. An ecosystem for
+                  Web3 solutions, decendivalised finances (DeFi), blockchain
                   technologies, to empower humanity, support skill learning,
                   promote value and entertainments.
                 </div>
@@ -75,6 +84,24 @@
                 <div class="rows-box">
                   <div class="tr">
                     <div class="active-indicator"></div>
+                    <div>Web Development</div>
+                    <div class="pricing-box active-status level2">
+                      <div class="product-price">
+                        <label for="Fee">Fee:</label>
+                        <span>$150.000</span>
+                      </div>
+                      <div class="session">
+                        <label for="session">Session:</label>
+                        <div>Q2 (3M)</div>
+                      </div>
+                      <div class="time-stamp">
+                        <label for="ending">Ends:</label>
+                        <div>31st July</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tr">
+                    <div class="active-indicator"></div>
                     <div>Graphics Design</div>
                     <div class="pricing-box active-status level1">
                       <div class="product-price">
@@ -97,7 +124,7 @@
                     <div class="pricing-box inactive-status level2">
                       <div class="product-price">
                         <label for="Fee">Fee:</label>
-                        <span>$150.000</span>
+                        <span>$170.000</span>
                       </div>
                       <div class="session">
                         <label for="session">Session:</label>
@@ -115,7 +142,7 @@
                     <div class="pricing-box inactive-status level3">
                       <div class="product-price">
                         <label for="Fee">Fee:</label>
-                        <span>$150.000</span>
+                        <span>$155.000</span>
                       </div>
                       <div class="session">
                         <label for="session">Session:</label>
@@ -133,7 +160,7 @@
                     <div class="pricing-box active-status level3">
                       <div class="product-price">
                         <label for="Fee">Fee:</label>
-                        <span>$150.000</span>
+                        <span>$200.000</span>
                       </div>
                       <div class="session">
                         <label for="session">Session:</label>
@@ -200,24 +227,6 @@
                     </div>
                   </div>
                   <div class="tr">
-                    <div class="active-indicator"></div>
-                    <div>Web Development</div>
-                    <div class="pricing-box active-status level2">
-                      <div class="product-price">
-                        <label for="Fee">Fee:</label>
-                        <span>$150.000</span>
-                      </div>
-                      <div class="session">
-                        <label for="session">Session:</label>
-                        <div>Q2 (3M)</div>
-                      </div>
-                      <div class="time-stamp">
-                        <label for="ending">Ends:</label>
-                        <div>31st July</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tr">
                     <div class="inactive-indicator"></div>
                     <div>Public Speaking</div>
                     <div class="pricing-box inactive-status level3">
@@ -245,7 +254,7 @@
                       </div>
                       <div class="session">
                         <label for="session">Session:</label>
-                        <div>Q2 (3M)</div>
+                        <div>Q3 (3M)</div>
                       </div>
                       <div class="time-stamp">
                         <label for="ending">Ends:</label>
@@ -297,19 +306,19 @@
           <div class="detail-group">
             <div id="detail-box" class="detail-box">
               <div class="user-detail">
-                <h3>User Details</h3>
+                <h3>Review your Details:</h3>
                 <div class="user-row">
                   <div>Username:</div>
-                  <div class="unitdetail"></div>
+                  <div id="preview-username" class="unitdetail"></div>
                 </div>
                 <div class="user-row">
                   <div>Email:</div>
-                  <div class="unitdetail"></div>
+                  <div id="preview-email" class="unitdetail"></div>
                 </div>
-                <div class="user-row">
+                <!-- <div class="user-row">
                   <div>Password:</div>
-                  <div class="unitdetail"></div>
-                </div>
+                  <div id="preview-password" class="unitdetail"></div>
+                </div> -->
               </div>
               <div class="user-footer">Copyright: ONET &copy 2018 | 2026.</div>
             </div>
