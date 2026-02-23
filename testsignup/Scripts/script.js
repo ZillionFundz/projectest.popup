@@ -1,9 +1,10 @@
 const checkBox = document.getElementById("checked");
 const password = document.getElementById("password");
 const bgDrop = document.getElementById("bg-drop");
-const submitBtn = document.getElementById("submit-btn");
-const signinButton = document.getElementById("signin-button");
+const previewBtn = document.getElementById("preview-btn");
+const signupButton = document.getElementById("signin-button");
 const detailBox = document.getElementById("detail-box");
+const signTitle = document.getElementById("sign-title");
 
 checkBox.addEventListener("change", () => {
   if (checkBox.checked) {
@@ -15,16 +16,31 @@ checkBox.addEventListener("change", () => {
   }
 });
 
-signinButton.addEventListener("click", (e) => {
+signupButton.addEventListener("click", (e) => {
   e.preventDefault();
   bgDrop.style.transform = "translateY(-150%)";
-  // bgDrop.classList.add = "hidden";
   setTimeout(() => {
     bgDrop.style.display = "none";
+    signTitle.style.display = "block";
   }, 600); // match CSS transition time
 });
 
-submitBtn.addEventListener("click", (e) => {
+previewBtn.addEventListener("click", (e) => {
   e.preventDefault();
   detailBox.style.visibility = "visible";
+
+  if ((previewBtn.textContent = "Preview")) {
+    setTimeout(() => {
+      previewBtn.textContent = "Reiew Courses";
+    }, 5000);
+    return;
+  }
+
+  if ((previewBtn.textContent = "Reiew Courses")) {
+    setTimeout(() => {
+      bgDrop.style.display = "block";
+      bgDrop.style.transform = "translateY(0)";
+      signTitle.style.display = "none";
+    }, 3000);
+  }
 });
