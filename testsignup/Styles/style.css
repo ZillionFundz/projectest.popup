@@ -38,6 +38,21 @@ form {
   height: 100%;
   width: 100%;
   max-width: 550px;
+  z-index: 0;
+}
+
+.sign-title {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(20px, 2vh, 100px);
+  font-weight: 600;
+  display: none;
+  color: #1100ff;
+  position: absolute;
+  letter-spacing: 1px;
+  left: 75px;
+  top: 55px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .form-box {
@@ -48,7 +63,7 @@ form {
   width: 100%;
   max-width: 400px;
   height: 100%;
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 5px 0px 0px 5px;
   margin: 0px;
   padding: 10px 15px;
   gap: 15px;
@@ -57,9 +72,9 @@ form {
   z-index: 0;
 }
 .form-box img {
-  width: 120px;
+  width: 100px;
   /* height: 200px; */
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .wrapper {
@@ -70,17 +85,17 @@ form {
 
 .input-label {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(12px, 1vh, 100px);
-  font-weight: 500;
-  color: #727272;
+  font-size: clamp(11px, 1vh, 100px);
+  font-weight: 400;
+  color: #818181;
   margin: 0px;
-  padding: 5px 5px;
+  padding: 3px 5px;
 }
 
 .input-field {
   width: 100%;
   min-width: 250px;
-  font-size: clamp(16px, 1vh, 100px);
+  font-size: clamp(14px, 1vh, 100px);
   margin: 0px;
   padding: 5px 10px 5px 5px;
   border: none;
@@ -88,14 +103,28 @@ form {
   /* border-radius: 8px; */
 }
 
-.submit-btn {
-  width: 50%;
+.preview-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.action-btn {
   margin: 0px;
-  padding: 10px 15px;
   background: #1100ff;
   color: #fff;
   border: 1px solid #000;
   border-radius: 10px;
+}
+
+#preview-btn {
+  padding: 10px 15px;
+  background: #000;
+}
+
+#submit-btn {
+  padding: 10px 45px;
 }
 
 .submit-btn:hover {
@@ -108,6 +137,17 @@ form {
   background: #29fa56;
   color: #000;
   /* border: 1px solid #000; */
+}
+
+.already-have-account {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(11px, 1vh, 100px);
+  font-weight: 400;
+}
+
+.already-have-account a {
+  text-decoration: none;
+  font-size: clamp(12px, 1vh, 100px);
 }
 
 #password {
@@ -132,7 +172,7 @@ form {
   align-items: center;
   flex-direction: column;
   margin: 0px;
-  padding: 10px 5px;
+  padding: 1px 2px;
   width: 100%;
   max-width: 500px;
   height: 100%;
@@ -150,11 +190,11 @@ form {
   width: 100%;
   height: 100%;
   margin: 0px;
-  padding: 15px 5px;
-  border-radius: 10px;
+  padding: 5px 15px 15px;
+  border-radius: 0px 5px 5px 0px;
   backdrop-filter: blur(20px);
   /* background: rgba(0, 0, 0, 0.85); */
-  background: rgba(60, 252, 118, 0.85);
+  background: rgba(22, 224, 90, 0.85);
   color: #464545;
   z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -169,21 +209,31 @@ form {
   align-items: center;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
 }
 
 .user-detail h3 {
   margin: 0px;
-  padding: 5px 0px 20px;
+  padding: 5px 0px 10px;
 }
 
 .user-row {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(14px, 2vh, 100px);
   margin: 0px;
   padding: 0px;
   width: 100%;
-  gap: 140px;
+}
+
+.user-footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(12px, 1.5vh, 100px);
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: #fff;
 }
 
 .bg-drop {
@@ -204,7 +254,7 @@ form {
   width: 100%;
   /* top: 0; */
   inset: 0;
-  z-index: 9999;
+  /* z-index: 0; */
   border-radius: 0px 0px 10px 10px;
   transform: translateY(0);
   transition: transform 0.6s ease-out;
@@ -230,6 +280,7 @@ form {
   padding: 10px 5px;
   width: 100%;
   top: 125px;
+  z-index: 1;
 }
 
 .bio-banner {
@@ -269,18 +320,18 @@ form {
 
 .bio-details {
   text-align: justify;
-  line-height: 20px;
+  line-height: 18px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(12px, 1vh, 100px);
   font-weight: 300;
-  border: 0.5px solid #000;
   background: #1b1b1b;
   /* backdrop-filter: blur(10px); */
   z-index: -1;
   color: #c9c9c9;
+  border: 0.5px solid rgba(17, 0, 255, 0.95);
   border-top: none;
-  padding: 40px 10px 5px;
   border-radius: 0px 0px 10px 10px;
+  padding: 40px 10px 5px;
   width: 100%;
   position: relative;
 }
@@ -290,9 +341,9 @@ form {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 160px;
+  max-width: 167px;
   position: absolute;
-  right: -65px;
+  right: -70px;
   top: 20px;
   transform: translate(-50%, -50%);
 }
@@ -302,7 +353,8 @@ form {
   /* color: #c9c9c9; */
   color: #fff;
   margin: 0px;
-  padding: 4px 20px;
+  min-width: 80px;
+  padding: 3px 10px;
   border: 0.2px solid #494949;
   border-radius: 10px;
   box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5);
@@ -400,7 +452,7 @@ form {
   flex-direction: column;
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(12px, 1vh, 100px);
-  font-weight: 300;
+  font-weight: 400;
   width: 100%;
   margin: 0px;
   padding: 5px 2px;
@@ -564,8 +616,8 @@ form {
     border-radius: 10px 10px 0px 0px;
     margin: 0px;
     padding: 20px 15px;
-    padding-top: 55px;
-    gap: 15px;
+    padding-top: 50px;
+    gap: 12px;
     background: #fff;
     /* box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.3); */
     z-index: 0;
@@ -573,12 +625,34 @@ form {
 
   .detail-group {
     margin: 0px;
-    padding: 10px 10px;
+    padding: 2px 1px;
     width: 100%;
     max-width: 500px;
     height: 100%;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 5px 5px;
     background: #202020;
+  }
+
+  .detail-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 5px 15px 15px;
+    border-radius: 0px 0px 5px 5px;
+    backdrop-filter: blur(20px);
+    /* background: rgba(0, 0, 0, 0.85); */
+    background: rgba(22, 224, 90, 0.85);
+    color: #464545;
+    z-index: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(14px, 2vh, 100px);
+    font-weight: bold;
+    outline: 1px solid #fff;
   }
 
   .group-box {
