@@ -178,7 +178,7 @@ form {
   height: 100%;
   border-radius: 0px 10px 10px 0px;
   background: #202020;
-  background: linear-gradient(-160deg, #1100ff, #cf18fd, #000);
+  background: linear-gradient(-160deg, #cf18fd, #1100ff, #29216e, #000);
   /* outline: 2px solid blue; */
 }
 
@@ -650,7 +650,7 @@ form {
     height: 100%;
     border-radius: 0px 0px 5px 5px;
     /* background: #202020; */
-    background: linear-gradient(-160deg, #1100ff, #cf18fd, #000);
+    background: linear-gradient(-160deg, #cf18fd, #1100ff, #29216e, #000);
   }
 
   .detail-box {
