@@ -182,50 +182,62 @@ form {
 }
 
 .detail-box {
-  display: flex;
+  display: none;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  visibility: hidden;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   margin: 0px;
   padding: 5px 15px 15px;
   border-radius: 0px 5px 5px 0px;
   backdrop-filter: blur(20px);
   /* background: rgba(0, 0, 0, 0.85); */
-  background: rgba(22, 224, 90, 0.85);
-  color: #464545;
+  background: rgba(22, 224, 90, 0.5);
+  /* color: #464545; */
   z-index: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(14px, 2vh, 100px);
   font-weight: bold;
   outline: 1px solid #fff;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s ease;
 }
 
 .user-detail {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 10px;
   width: 100%;
+  /* background: #3307f8; */
 }
 
 .user-detail h3 {
   margin: 0px;
   padding: 5px 0px 10px;
+  color: #464545;
 }
 
 .user-row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: space-between;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(14px, 2vh, 100px);
   margin: 0px;
-  padding: 0px;
+  padding: 2px 10px;
   width: 100%;
+  /* background: #f80707; */
+}
+
+.unitdetail {
+  display: block;
+  /* color: #1100ff; */
+  min-width: 120px;
 }
 
 .user-footer {
@@ -328,7 +340,7 @@ form {
   /* backdrop-filter: blur(10px); */
   z-index: -1;
   color: #c9c9c9;
-  border: 0.5px solid rgba(17, 0, 255, 0.95);
+  border: 1px solid rgba(17, 0, 255, 0.95);
   border-top: none;
   border-radius: 0px 0px 10px 10px;
   padding: 40px 10px 5px;
@@ -490,7 +502,7 @@ form {
 
 .rows-box {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 3px;
   line-height: 14px;
   text-align: center;
@@ -631,14 +643,14 @@ form {
     height: 100%;
     border-radius: 0px 0px 5px 5px;
     background: #202020;
+    background: linear-gradient(-160deg, #cf18fd, #00ff6a, #1100ff);
   }
 
   .detail-box {
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    visibility: hidden;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -646,7 +658,7 @@ form {
     border-radius: 0px 0px 5px 5px;
     backdrop-filter: blur(20px);
     /* background: rgba(0, 0, 0, 0.85); */
-    background: rgba(22, 224, 90, 0.85);
+    background: rgba(22, 224, 90, 0.5);
     color: #464545;
     z-index: 0;
     font-family: Arial, Helvetica, sans-serif;
