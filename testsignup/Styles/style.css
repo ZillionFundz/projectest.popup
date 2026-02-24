@@ -217,8 +217,15 @@ form {
 
 .user-detail h3 {
   margin: 0px;
-  padding: 5px 0px 10px;
-  color: #464545;
+  padding: 5px 10px;
+  /* background: #949494; */
+  background: #eedebf;
+  border-radius: 5px;
+  /* color: #464545; */
+  color: #1b1b1b;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(14px, 2vh, 100px);
 }
 
 .user-row {
@@ -226,18 +233,17 @@ form {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   justify-content: space-between;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(14px, 2vh, 100px);
   margin: 0px;
-  padding: 2px 10px;
+  padding: 5px 10px;
   width: 100%;
-  /* background: #f80707; */
+  background: #f80707;
 }
 
 .unitdetail {
   display: block;
-  /* color: #1100ff; */
-  min-width: 120px;
+  color: #fff !important;
+  /* min-width: 120px; */
+  justify-self: end;
 }
 
 .user-footer {
