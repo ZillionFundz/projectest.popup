@@ -55,7 +55,7 @@ previewBtn.addEventListener("click", () => {
       console.log("Timeout Executed");
 
       detailGroup.style.background =
-        "linear-gradient(-160deg, #cf18fd, #ffffff, #05013b)";
+        "linear-gradient(-160deg, #cf18fd, #1100ff, #fff, #000)";
       previewBtn.textContent = "My Courses";
 
       isPreview = false;
@@ -75,7 +75,7 @@ previewBtn.addEventListener("click", () => {
       detailBox.style.transform = "translateY(-20)";
 
       detailGroup.style.background =
-        "linear-gradient(-160deg, #cf18fd, #00ff6a, #1100ff)";
+        "linear-gradient(-160deg, #cf18fd, #1100ff, #29216e, #000)";
 
       isAnimating = false;
     }, 5000);
