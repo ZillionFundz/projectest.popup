@@ -3,6 +3,7 @@ const previewButton = document.getElementById("preview-button");
 const signupButton = document.getElementById("signup-button");
 const checkBox = document.getElementById("signup-checkbox");
 const signinButton = document.getElementById("signin-button");
+const exitButton = document.getElementById("exit-button");
 const switchtoSigninButton = document.getElementById("switchto-signin-button");
 const switchtoSignupButton = document.getElementById("switchto-signup-button");
 const signupForm = document.getElementById("signup-form");
@@ -97,6 +98,15 @@ previewButton.addEventListener("click", () => {
       isAnimating = false;
     }, 5000);
   }
+});
+
+exitButton.addEventListener("click", () => {
+  setTimeout(() => {
+    signinForm.classList.remove("active-view");
+    signinForm.classList.add("hidden-view");
+    bgDrop.classList.remove("hide-bg");
+    bgDrop.classList.add("active-view");
+  }, 500);
 });
 
 switchtoSigninButton.addEventListener("click", (e) => {
