@@ -155,10 +155,10 @@ body {
 .exit-button {
   margin: 0px;
   padding: 5px;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   font-size: clamp(18px, 2vh, 100px);
-  border: none;
+  border: 0.2px solid #1b1b1b;
   background: #dddddd;
   color: #000;
   border-radius: 50%;
@@ -171,7 +171,7 @@ body {
 
 .exit-button:hover {
   color: #c9c9c9;
-  background: #464545;
+  border: 1px solid #000;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -499,10 +499,10 @@ body {
   width: 75px;
   height: 75px;
   /* border: 2px solid #00ff6a; */
-  border: 2px solid #1100ff;
+  border: 3px solid #1b1b1b;
   border-radius: 50%;
   page-break-inside: 0px;
-  padding: 1px;
+  padding: 0.5px;
 }
 
 .bio-details {
@@ -862,8 +862,3 @@ body {
     font-weight: bold;
   }
 }
-
-
-
-
-
