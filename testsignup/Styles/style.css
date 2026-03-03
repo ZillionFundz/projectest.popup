@@ -681,6 +681,22 @@ body {
   border-radius: 5px;
 }
 
+.course-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(12px, 1vh, 20px);
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.course-detail {
+  color: #eaeaea;
+}
+
+.course-value {
+  color: #fff;
+}
+
 .session {
   display: flex;
   justify-content: space-between;
@@ -730,14 +746,10 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(12px, 1vh, 20px);
-  font-weight: 300px;
-  /* letter-spacing: 0px; */
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   background: #1b1b1b;
-  color: #b8b6b6;
+  color: #fff;
   margin: 0px;
   padding: 10px 2px 2px;
   gap: 10px;
