@@ -537,7 +537,7 @@ body {
   /* transform: translate(-50%, -50%); */
   /* z-index: 0; */
   inset: 0;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.75);
   transition: 0.5s;
 }
 
@@ -562,7 +562,10 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.35);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: clamp(18px, 2vh, 100px);
+  font-weight: 600;
   /* border: 1px solid #2afa69; */
   border: 1px solid #383838;
   position: absolute;
