@@ -470,7 +470,7 @@ body {
 
   backdrop-filter: blur(20px);
   margin: 0px;
-  padding: 5px 5px;
+  padding: 0px 2px;
   width: 100%;
   max-width: 580px;
   height: 100%;
