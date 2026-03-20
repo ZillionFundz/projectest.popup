@@ -8,6 +8,8 @@ const switchtoSigninButton = document.getElementById("switchto-signin-button");
 const switchtoSignupButton = document.getElementById("switchto-signup-button");
 const signupForm = document.getElementById("signup-form");
 const signinForm = document.getElementById("signin-form");
+const signinWrapper = document.getElementById("signin-wrapper");
+const signinInputLabel = document.getElementById("signin-input-label");
 const username = document.getElementById("signup-username");
 const email = document.getElementById("signup-email");
 const password = document.getElementById("signup-password");
@@ -53,6 +55,12 @@ exitProfileButton.addEventListener("click", () => {
     profileViewedBox.classList.remove("view-profile-image");
     profileViewedBox.classList.add("close-profile-image");
   }, 200);
+});
+
+signinInputLabel.addEventListener("click", () => {
+  signinWrapper.classList.add("input-active");
+  signinInputLabel.style.fontSize = "clamp(10px, 1vw, 100px)";
+  signinInputLabel.style.color = "#1100ff";
 });
 
 signupForm.classList.add("hidden-view");
